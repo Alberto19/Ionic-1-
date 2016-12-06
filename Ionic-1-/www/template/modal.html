@@ -1,0 +1,19 @@
+<ion-modal-view >
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Novo contato</h1>
+    <button ng-click="modal.hide()" class="button button-primary">Cancelar</button>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+              <span class="input-label">Nome</span>
+              <input type="text" ng-model="contato.nome"> 
+            </label>
+      <label class="item item-input">
+              <span class="input-label">E-mail</span>
+              <input type="text" ng-model="contato.email"> 
+            </label>
+      <button  ng-click="vm.addContato(contato)" class="button button-full button-positive">Cadastrar</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

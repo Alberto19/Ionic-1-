@@ -1,0 +1,18 @@
+<ion-view view-title="Emprestimo">
+  <ion-content>
+    <div  class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input ng-model="Aluno.nome" type="search" placeholder="Buscar">
+  </label>
+
+    </div>
+    <div>
+      <ion-item ng-repeat="aluno in alunos | filter: Aluno.nome">
+        {{aluno.nome}} -  {{aluno.serie}}
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-view>
+
+
